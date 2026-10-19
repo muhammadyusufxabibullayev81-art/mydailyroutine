@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Daily Routine</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="background-glow glow1"></div>
+    <div class="background-glow glow2"></div>
+
+    <header class="header">
+        <a href="#home" class="logo">
+            <span class="logo-icon">✦</span>
+            My Daily<span> Routine</span>
+        </a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#routine">My Routine</a>
+            <a href="#goals">Goals</a>
+            <a href="#tips">Tips</a>
+        </nav>
+
+        <a href="#routine" class="header-button">Get Started ↗</a>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="live-dot"></span>
+                    YOUR PERSONAL PRODUCTIVITY SPACE
+                </div>
+
+                <h1>
+                    My daily
+                    <span class="gradient-text"> <br> Routine</span>
+                </h1>
+
+                <p class="hero-description">
+                    Build better habits, stay focused, and become the best
+                    version of yourself. Your future starts with what you
+                    do today.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#routine" class="primary-button">Explore My Routine ↗</a>
+                    <a href="#goals" class="secondary-button">My Goals</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <h2>09<span>+</span></h2>
+                        <p>Daily Activities</p>
+                    </div>
+                    <div>
+                        <h2>100<span>%</span></h2>
+                        <p>Personal Growth</p>
+                    </div>
+                    <div>
+                        <h2>365</h2>
+                        <p>Days to Improve</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="hero-circle">
+                    <div class="hero-emoji">🚀</div>
+                    <h3>My Dream Big</h3>
+                    <p>Start Small. Stay Consistent.</p>
+                </div>
+
+                <div class="floating-card floating-top">
+                    <span>⚡</span>
+                    <div>
+                        <strong>Stay Focused</strong>
+                        <small>One step at a time</small>
+                    </div>
+                </div>
+
+                <div class="floating-card floating-bottom">
+                    <span>🎯</span>
+                    <div>
+                        <strong>Daily Progress</strong>
+                        <small>Keep moving forward</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="welcome-section">
+            <div>
+                <p class="section-label">A NEW DAY, A NEW CHANCE</p>
+                <h2 id="greeting">Good evening! 👋</h2>
+                <p class="welcome-text">
+                    Every little action you take today builds a better tomorrow.
+                </p>
+            </div>
+
+            <div class="date-box">
+                <span>📅</span>
+                <div>
+                    <strong id="current-date">Loading date...</strong>
+                    <p id="current-time">Loading time...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="routine-section" id="routine">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">YOUR DAILY SCHEDULE</p>
+                    <h2>My Daily <span>Routine.</span></h2>
+                    <p class="section-description">
+                        A balanced routine for a productive and successful life.
+                    </p>
+                </div>
+
+                <div class="completion-box">
+                    <strong id="completion-count">0 / 9</strong>
+                    <span>Activities completed</span>
+                </div>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-info">
+                    <span>Daily Progress</span>
+                    <strong id="progress-percent">0%</strong>
+                </div>
+                <div class="progress-track">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Activities</button>
+                <button class="filter-btn" data-filter="morning">Morning</button>
+                <button class="filter-btn" data-filter="afternoon">Afternoon</button>
+                <button class="filter-btn" data-filter="evening">Evening</button>
+            </div>
+
+            <div class="routine-grid">
+
+                <article class="routine-card blue" data-category="morning">
+                    <div class="card-top">
+                        <div class="activity-icon">🛏️</div>
+                        <span class="activity-number">01</span>
+                    </div>
+                    <p class="activity-time">06:30 AM</p>
+                    <h3>Wake Up Early</h3>
+                    <p class="activity-description">
+                        Start your day with a fresh mind and a positive attitude.
+                        Make your bed and prepare for a great day.
+                    </p>
+                    <div class="activity-tags">
+                        <span>Morning</span><span>10 min</span>
+                    </div>
+                    <button class="complete-btn">○ Mark as Complete</button>
+                </article>
+
+                <article class="routine-card purple" data-category="morning">
+                    <div class="card-top">
+                        <div class="activity-icon">🏋️</div>
+                        <span class="activity-number">02</span>
+                    </div>
+                    <p class="activity-time">06:45 AM</p>
+                    <h3>Morning Workout</h3>
+                    <p class="activity-description">
+                        Move your body, stretch your muscles, and build healthy
+                        habits that make you stronger every day.
+                    </p>
+                    <div class="activity-tags">
+                        <span>Fitness</span><span>30 min</span>
+                    </div>
+                    <button class="complete-btn">○ Mark as Complete</button>
+                </article>
+
+                <article class="routine-card cyan" data-category="morning">
+                    <div class="card-top">
+                        <div class="activity-icon">🚿</div>
+                        <span class="activity-number">03</span>
+                    </div>
+                    <p class="activity-time">07:30 AM</p>
+                    <h3>Shower & Get Ready</h3>
+                    <p class="activity-description">
+                        Take a refreshing shower, get dressed, and prepare
+                        yourself for a productive day.
+                    </p>
+                    <div class="activity-tags">
+                        <span>Self-care</span><span>20 min</span>
+                    </div>
+                    <button class="complete-btn">○ Mark as Complete</button>
+                </article>
+
+                <article class="routine-card orange" data-category="morning">
+                    <div class="card-top">
+                        <div class="activity-icon">🍳</div>
+                        <span class="activity-number">04</span>
+                    </div>
+                    <p class="activity-time">08:00 AM</p>
+                    <h3>Healthy Breakfast</h3>
+                    <p class="activity-description">
+                        Enjoy a nutritious breakfast to fuel your body
+                        and give yourself energy for the day ahead.
+                    </p>
+                    <div class="activity-tags">
+                        <span>Health</span><span>20 min</span>
+                    </div>
+                    <button class="complete-btn">○ Mark as Complete</button>
+                </article>
+
+                <article class="routine-card pink" data-category="morning">
+                    <div class="card-top">
+                        <div class="activity-icon">📚</div>
+                        <span class="activity-number">05</span>
+                    </div>
+                    <p class="activity-time">08:30 AM</p>
+                    <h3>Study & Learn</h3>
+                    <p class="activity-description">
+                        Learn something new, review your lessons, and develop
+                        the knowledge that will help you achieve your goals.
+                    </p>
+                    <div class="activity-tags">
+                        <span>Education</span><span>2 hours</span>
+                    </div>
+                    <button class="complete-btn">○ Mark as Complete</button>
+                </article>
+
+                <article class="routine-card green" data-category="afternoon">
+                    <div class="card-top">
+                        <div class="activity-icon">💻</div>
+                        <span class="activity-number">06</span>
+                    </div>
+                    <p class="activity-time">01:00 PM</p>
+                    <h3>Coding & Projects</h3>
+                    <p class="activity-description">
+                        Practice HTML, CSS, and JavaScript. Create new projects
+                        and turn your creative ideas into real websites.
+                    </p>
+                    <div class="activity-tags">
+                        <span>Programming</span><span>2 hours</span>
+                    </div>
+                    <button class="complete-btn">○ Mark as Complete</button>
+                </article>
+
+                <article class="routine-card yellow" data-category="afternoon">
+                    <div class="card-top">
+                        <div class="activity-icon">🍽️</div>
+                        <span class="activity-number">07</span>
+                    </div>
+                    <p class="activity-time">05:00 PM</p>
+                    <h3>Family Time & Dinner</h3>
+                    <p class="activity-description">
+                        Take a break from screens, enjoy a meal with your
+                        family, and appreciate the little things in life.
+                    </p>
+                    <div class="activity-tags">
+                        <span>Family</span><span>1 hour</span>
+                    </div>
+                    <button class="complete-btn">○ Mark as Complete</button>
+                </article>
+
+                <article class="routine-card pink" data-category="evening">
+                    <div class="card-top">
+                        <div class="activity-icon">📖</div>
+                        <span class="activity-number">08</span>
+                    </div>
+                    <p class="activity-time">06:00 PM</p>
+                    <h3>Reading & Growth</h3>
+                    <p class="activity-description">
+                        Read books, explore new ideas, and spend time
+                        improving your skills and personal development.
+                    </p>
+                    <div class="activity-tags">
+                        <span>Growth</span><span>45 min</span>
+                    </div>
+                    <button class="complete-btn">○ Mark as Complete</button>
+                </article>
+
+                <article class="routine-card purple" data-category="evening">
+                    <div class="card-top">
+                        <div class="activity-icon">🌙</div>
+                        <span class="activity-number">09</span>
+                    </div>
+                    <p class="activity-time">10:00 PM</p>
+                    <h3>Relax & Sleep</h3>
+                    <p class="activity-description">
+                        Put your devices away, relax your mind, and get enough
+                        sleep so you can wake up refreshed tomorrow.
+                    </p>
+                    <div class="activity-tags">
+                        <span>Wellness</span><span>8 hours</span>
+                    </div>
+                    <button class="complete-btn">○ Mark as Complete</button>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="quote-section">
+            <div class="quote-icon">“</div>
+            <p class="section-label">DAILY INSPIRATION</p>
+            <h2>Small steps every day lead to <span>big results.</span></h2>
+            <p class="quote-author">YOUR FUTURE SELF WILL THANK YOU.</p>
+        </section>
+
+        <section class="goals-section" id="goals">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">THINK BIGGER</p>
+                    <h2>My Personal Goals<span>.</span></h2>
+                    <p class="section-description">
+                        The things I want to achieve by staying consistent.
+                    </p>
+                </div>
+            </div>
+
+            <div class="goals-grid">
+                <div class="goal-card">
+                    <div class="goal-icon">💻</div>
+                    <h3>Become a Developer</h3>
+                    <p>Build beautiful websites and master web development.</p>
+                    <div class="goal-bottom">
+                        <span>Keep practicing</span><span>↗</span>
+                    </div>
+                </div>
+
+                <div class="goal-card">
+                    <div class="goal-icon">🧠</div>
+                    <h3>Learn Every Day</h3>
+                    <p>Discover new ideas, improve my knowledge, and grow.</p>
+                    <div class="goal-bottom">
+                        <span>Never stop learning</span><span>↗</span>
+                    </div>
+                </div>
+
+                <div class="goal-card">
+                    <div class="goal-icon">💪</div>
+                    <h3>Stay Healthy</h3>
+                    <p>Build healthy habits, exercise, and take care of myself.</p>
+                    <div class="goal-bottom">
+                        <span>Progress over perfection</span><span>↗</span>
+                    </div>
+                </div>
+
+                <div class="goal-card">
+                    <div class="goal-icon">🎯</div>
+                    <h3>Stay Consistent</h3>
+                    <p>Follow my schedule and make every day meaningful.</p>
+                    <div class="goal-bottom">
+                        <span>One day at a time</span><span>↗</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips-section" id="tips">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">BETTER HABITS, BETTER LIFE</p>
+                    <h2>Tips for a Better Day<span>.</span></h2>
+                </div>
+            </div>
+
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <span>01</span>
+                    <div>
+                        <h3>Plan Your Day</h3>
+                        <p>Know what you want to accomplish before you begin.</p>
+                    </div>
+                    <div class="tip-emoji">📝</div>
+                </div>
+
+                <div class="tip-card">
+                    <span>02</span>
+                    <div>
+                        <h3>Limit Distractions</h3>
+                        <p>Focus on one task at a time and put your phone away.</p>
+                    </div>
+                    <div class="tip-emoji">🎧</div>
+                </div>
+
+                <div class="tip-card">
+                    <span>03</span>
+                    <div>
+                        <h3>Take Short Breaks</h3>
+                        <p>Give your mind time to rest between important tasks.</p>
+                    </div>
+                    <div class="tip-emoji">☕</div>
+                </div>
+
+                <div class="tip-card">
+                    <span>04</span>
+                    <div>
+                        <h3>Celebrate Progress</h3>
+                        <p>Be proud of small improvements and keep going.</p>
+                    </div>
+                    <div class="tip-emoji">🏆</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-section">
+            <div class="final-icon">✨</div>
+            <p class="section-label">YOUR JOURNEY STARTS NOW</p>
+            <h2>Become 1% Better <span>Every Day.</span></h2>
+            <p>
+                You don't need a perfect day. You just need to take
+                the next small step.
+            </p>
+            <a href="#routine" class="primary-button">Start My Day ↗</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#home" class="logo">
+            <span class="logo-icon">✦</span>
+            Daily<span>Flow</span>
+        </a>
+        <p>Designed for a better you. © 2026 DailyFlow.</p>
+        <a href="#home" class="back-to-top">Back to top ↑</a>
+    </footer>
+
+    <div class="toast" id="toast">🎉 Great job! Keep going!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
